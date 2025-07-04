@@ -51,9 +51,9 @@ if uploaded_file and api_key:
     knowledge_chunks = get_data_chunks(knowledge_base, chunk_size=20)
 
     # Setup ChromaDB
-    #chroma_client = chromadb.Client(Settings(persist_directory="./chroma_data_store"))
-    chroma_client = chromadb.Client(Settings(chroma_db_impl="duckdb+parquet",persist_directory=None  # No disk writes
-))
+    chroma_client = chromadb.Client(Settings(persist_directory="./chroma_data_store"))
+    #chroma_client = chromadb.Client(Settings(chroma_db_impl="duckdb+parquet",persist_directory=None)  # No disk writes
+
     
     
     collection_name = "knowledge_base_resume"
