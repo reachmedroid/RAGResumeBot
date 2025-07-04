@@ -1,4 +1,4 @@
-openai
 streamlit
-pymupdf
+openai
+PyMuPDF
 chromadb
